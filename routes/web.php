@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes — Sistem Pemesanan Restoran
+| Web Routes - Sistem Pemesanan Restoran
 |--------------------------------------------------------------------------
 |
 | Route resource untuk pelanggan, meja, pesanan, serta route laporan.

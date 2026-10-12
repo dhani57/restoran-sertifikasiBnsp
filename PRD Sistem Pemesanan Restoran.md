@@ -123,7 +123,7 @@ Catatan: untuk lampiran, gambar ERD dan Use Case dapat dibuat dengan draw.io ata
 
 ## 4. Pemetaan Pemenuhan 9 Unit Kompetensi
 
-### 4.1 J.620100.009.01 — Menggunakan Spesifikasi Program
+### 4.1 J.620100.009.01 - Menggunakan Spesifikasi Program
 
 **Pemenuhan:** Pengembangan mengacu pada spesifikasi tertulis berupa dokumen PRD ini.
 
@@ -135,7 +135,7 @@ Catatan: untuk lampiran, gambar ERD dan Use Case dapat dibuat dengan draw.io ata
 
 **Bukti:** dokumen PRD, gambar ERD, gambar Use Case, dan file migration di `database/migrations/`.
 
-### 4.2 J.620100.016.01 — Menerapkan Best Practices Pemrograman
+### 4.2 J.620100.016.01 - Menerapkan Best Practices Pemrograman
 
 **Pemenuhan:** seluruh kode mengikuti aturan penamaan dan kerapian berikut.
 
@@ -150,7 +150,7 @@ Aturan kerapian: indentasi 4 spasi, satu class per file, method pendek dengan sa
 
 **Bukti:** seluruh file di `app/`, `routes/web.php`, dan `resources/views/`.
 
-### 4.3 J.620100.017.02 — Menulis Kode dengan Prinsip Pemrograman Terstruktur
+### 4.3 J.620100.017.02 - Menulis Kode dengan Prinsip Pemrograman Terstruktur
 
 **Pemenuhan:** logika validasi ketersediaan meja memakai struktur perulangan (`foreach`) dan percabangan (`if-else`). Sistem mengambil semua meja yang kapasitasnya mencukupi, lalu memeriksa satu per satu apakah meja tersebut sudah dipesan pada tanggal dan jam yang sama.
 
@@ -179,7 +179,7 @@ Pada `store()`, hasil fungsi diperiksa dengan `if ($meja === null) { ... } else 
 
 **Bukti:** method `cariMejaTersedia()` dan `store()` di `PesananController`.
 
-### 4.4 J.620100.018.02 — Menerapkan Pemrograman Berorientasi Objek
+### 4.4 J.620100.018.02 - Menerapkan Pemrograman Berorientasi Objek
 
 **Pemenuhan:** Laravel menggunakan class dan pewarisan (inheritance) secara langsung.
 
@@ -217,7 +217,7 @@ class Pesanan extends Model
 
 **Bukti:** folder `app/Models/` dan `app/Http/Controllers/`.
 
-### 4.5 J.620100.019.02 — Menggunakan Library atau Komponen Pre-Existing
+### 4.5 J.620100.019.02 - Menggunakan Library atau Komponen Pre-Existing
 
 **Pemenuhan:** pencetakan laporan menggunakan library `barryvdh/laravel-dompdf`, dipasang melalui Composer.
 
@@ -244,7 +244,7 @@ View `laporan/pdf.blade.php` berisi tabel pesanan (tanggal, jam, pelanggan, meja
 
 **Bukti:** `composer.json`, `LaporanController`, dan `resources/views/laporan/pdf.blade.php`.
 
-### 4.6 J.620100.021.02 — Mengimplementasikan Pemrograman Akses Basis Data
+### 4.6 J.620100.021.02 - Mengimplementasikan Pemrograman Akses Basis Data
 
 **Pemenuhan:** seluruh akses data memakai Eloquent ORM, tanpa query SQL manual. Koneksi MySQL diatur di file `.env` (`DB_CONNECTION=mysql`, `DB_DATABASE=restoran`). Struktur tabel dibuat dengan migration.
 
@@ -259,7 +259,7 @@ Selain itu digunakan relasi Eloquent (`with()`, `belongsTo`, `hasMany`) dan filt
 
 **Bukti:** file migration, model, dan controller; isi tabel pada MySQL (Laragon).
 
-### 4.7 J.620100.023.02 — Mendokumentasikan Kode Program
+### 4.7 J.620100.023.02 - Mendokumentasikan Kode Program
 
 **Pemenuhan:** setiap class dan method diberi komentar DocBlock dengan format berikut.
 
@@ -286,7 +286,7 @@ File `README.md` di root proyek berisi:
 
 **Bukti:** komentar pada file controller dan model, serta file `README.md`.
 
-### 4.8 J.620100.025.02 — Melakukan Debugging
+### 4.8 J.620100.025.02 - Melakukan Debugging
 
 **Pemenuhan:** operasi yang berisiko gagal dibungkus `try-catch`. Kesalahan query ditangkap, dicatat ke log, dan ditampilkan sebagai pesan yang ramah kepada Admin, sehingga aplikasi tidak menampilkan halaman error mentah.
 
@@ -315,7 +315,7 @@ Teknik debugging yang dapat didemonstrasikan: membaca `storage/logs/laravel.log`
 
 **Bukti:** blok `try-catch` pada controller, file log, dan tampilan pesan error di halaman.
 
-### 4.9 J.620100.033.02 — Melaksanakan Pengujian Unit Program
+### 4.9 J.620100.033.02 - Melaksanakan Pengujian Unit Program
 
 **Pemenuhan:** pengujian memakai PHPUnit bawaan Laravel. Basis data pengujian terpisah (`restoran_test`) diatur pada `phpunit.xml`, dan trait `RefreshDatabase` mengosongkan data setiap pengujian.
 

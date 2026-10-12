@@ -4,10 +4,10 @@ Aplikasi web sederhana untuk mencatat pemesanan meja restoran, menyimpan data pe
 
 ## Fitur Utama
 
-- **Kelola Pelanggan** — Tambah, lihat, ubah, dan hapus data pelanggan.
-- **Kelola Meja** — Tambah, lihat, ubah, dan hapus data meja restoran.
-- **Kelola Pesanan** — Buat, lihat, ubah, hapus, dan ubah status pesanan meja dengan validasi ketersediaan otomatis.
-- **Laporan Pemesanan** — Filter pesanan per rentang tanggal, lihat di layar, dan cetak ke PDF.
+- **Kelola Pelanggan** - Tambah, lihat, ubah, dan hapus data pelanggan.
+- **Kelola Meja** - Tambah, lihat, ubah, dan hapus data meja restoran.
+- **Kelola Pesanan** - Buat, lihat, ubah, hapus, dan ubah status pesanan meja dengan validasi ketersediaan otomatis.
+- **Laporan Pemesanan** - Filter pesanan per rentang tanggal, lihat di layar, dan cetak ke PDF.
 
 ## Kebutuhan Sistem
 
@@ -93,8 +93,8 @@ Pastikan basis data `restoran_test` sudah dibuat sebelum menjalankan pengujian.
 
 ## Teknologi yang Digunakan
 
-- **Laravel** — Framework PHP dengan arsitektur MVC
-- **MySQL** — Basis data relasional
-- **Bootstrap 5** — Framework CSS via CDN
-- **barryvdh/laravel-dompdf** — Library untuk mencetak laporan ke PDF
-- **PHPUnit** — Framework pengujian bawaan Laravel
+- **Laravel** - Framework PHP dengan arsitektur MVC
+- **MySQL** - Basis data relasional
+- **Bootstrap 5** - Framework CSS via CDN
+- **barryvdh/laravel-dompdf** - Library untuk mencetak laporan ke PDF
+- **PHPUnit** - Framework pengujian bawaan Laravel

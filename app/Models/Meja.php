@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
- * Model Meja — mewakili tabel meja.
+ * Model Meja - mewakili tabel meja.
  *
  * Satu meja dapat dipesan berkali-kali pada tanggal atau jam yang berbeda
  * (relasi one-to-many ke pesanan).

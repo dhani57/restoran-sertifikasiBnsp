@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 /**
- * Model Pesanan — mewakili tabel pesanan.
+ * Model Pesanan - mewakili tabel pesanan.
  *
  * Setiap pesanan terhubung ke satu pelanggan (belongsTo) dan satu meja (belongsTo).
  * Status pesanan dapat berupa: dipesan, selesai, atau dibatalkan.

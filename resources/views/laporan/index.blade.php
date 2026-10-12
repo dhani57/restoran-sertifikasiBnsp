@@ -42,7 +42,7 @@
         <div class="card-header bg-white">
             <strong>Laporan Pemesanan</strong>
             <span class="text-muted">
-                ({{ \Carbon\Carbon::parse($tanggalAwal)->format('d/m/Y') }} —
+                ({{ \Carbon\Carbon::parse($tanggalAwal)->format('d/m/Y') }} -
                 {{ \Carbon\Carbon::parse($tanggalAkhir)->format('d/m/Y') }})
             </span>
         </div>

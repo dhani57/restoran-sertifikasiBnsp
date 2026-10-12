@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
 /**
- * Model Pelanggan — mewakili tabel pelanggan.
+ * Model Pelanggan - mewakili tabel pelanggan.
  *
  * Satu pelanggan dapat memiliki banyak pesanan (relasi one-to-many).
  * Properti $fillable membatasi kolom yang boleh diisi secara massal.
